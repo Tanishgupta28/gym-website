@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.css">
+    <title>contact</title>
+</head>
+
+<body>
+    <%- include('partials/nav') %>
+
+    <div id="aboutback">
+        <div class="type">
+            <div class="largetext">
+                <span id="element" class="redtext"></span>
+            </div>
+            <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+            <script>
+                var typed = new Typed('#element', {
+                    strings: ['LET\'S  HAVE  A  TALK'],
+                    typeSpeed: 100,
+                });
+            </script>
+        </div>
+        <div class="Animationbox">
+
+        </div>
+    </div>
+    <div class="maincontent">
+        <div class="map box"><iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3432.8420937264073!2d76.81334687385338!3d30.63840749018824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390febfa30955699%3A0x5508a9f41b5f4b79!2sHYPE%20THE%20GYM%20ZIRAKPUR!5e0!3m2!1sen!2sin!4v1722234064472!5m2!1sen!2sin"
+                style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+        <div class="contact box">
+            <h4>Meet Us</h4>
+            <div class="info">
+                 <div class="contactbox"><img src="logo/icons8-phone-50.png" alt="">
+                    <p>+91 9999999999</p>
+                </div>
+                <div class="contactbox"><img src="logo/icons8-envelope-50.png" alt="">
+                    <p>contacthype@gmail.com</p>
+                </div>
+                <div class="contactbox"><img src="logo/icons8-location-50.png" alt="">
+                    <p>Second Floor, Hype the gym, market, VIP Rd, opp. B-Block, Zirakpur, Punjab 140603</p>
+                </div>
+            </div>
+        </div>
+        <div class="details box">
+            <h4>Your Details</h4>
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="0dcd278d-45f0-4886-85a7-ad87662f3216">
+                <div class="box2"> <input class="underline" type="email" name="email" id="email"
+                        placeholder="Enter your Email Address"></div>
+                <div class="box3"><input class="underline" type="text" name="name" id="name" placeholder="Name"></div>
+                <div class="box4"><input class="underline" type="number" name="number" id="number" placeholder="Phone Number">
+                </div>
+                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                <div class="box5"><button id="submit" class="subunder" type="submit">Send</button></div>
+                <div id="result"></div>
+            </form>
+        </div>
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="contact.js"></script>
+</body>
+
+</html>
